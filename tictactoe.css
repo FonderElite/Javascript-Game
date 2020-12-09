@@ -1,0 +1,386 @@
+
+    @import url("https://fonts.googleapis.com/css?family=Orbitron");
+    *{
+        font-family: 'Orbitron', sans-serif;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+   box-sizing: border-box;
+     background:url('https://wallpapercave.com/wp/wp3930460.jpg');
+     background-repeat: no-repeat;
+     background-size: 2200px 1590px;
+     color: white;
+   
+    }
+    .wrap{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 440px;
+        max-height: 440px;
+        width: 420px;
+        border: outset 5px rgb(75, 140, 184);
+border-image: -webkit-linear-gradient(to top, #88dde0, #4666e9);
+border-image-slice: 1;
+box-shadow: 0 15px 25px rgba(9, 48, 80, 0.822);
+background:url("http://oswallpapers.com/wp-content/uploads/2018/09/default.jpg");
+background-repeat: no-repeat;
+background-size: 450px 450px;
+
+    }
+    table{
+        margin: 0;
+        border-collapse: collapse;
+        border-style: hidden;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 200px;
+        max-height: 200px;
+        width: 200px;
+        table-layout: fixed;
+    }
+    table td{
+        padding: 0px;
+         border: 5px solid rgb(255, 255, 255);
+         box-shadow: 4px 3px 10px 0px;
+        
+        
+    }
+    .cell{
+        text-align: center;
+        font-family: "Orbitron", sans-serif;
+        font-weight: 900;
+        margin: 0px;
+        white-space: nowrap;
+        height: 80px;
+        width: 90px;
+        position: relative;
+        display: table-cell;
+        color: #01bbc2;
+    }
+    span.fa-4x{
+        font-size: 57px;
+    }
+    span.fa-times{
+        font-size: 62px;
+    }
+header{
+    height: 10%;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    top: 0%;
+    padding: 20px;
+    display: inline-block;
+}
+#x_win{
+    color: #bcd338;
+    top: 13px;
+    left: 35px;
+    position: absolute;
+    
+
+}
+#o_win{
+    color: #e2e6e1;
+top: 18px;
+left: 150px;
+position: absolute;
+
+}
+#draws{
+    color: rgb(221, 22, 22);
+    top: 19px;
+    left: 270px;
+    position: absolute;
+}
+#ooo, #xx, #draw0{
+font-variant-numeric: tabular-nums;
+}
+.fa-times{
+font-size: 34px;
+
+}
+.fa-circle-o{
+    font-size: 27px;
+
+}
+.fa-balance-scale{
+    font-size: 23px;
+}
+#result{
+color: #01bbc2;
+font-size: 20px;
+font-family: 'Orbitron', sans-serif;
+position: relative;
+left: 130px;
+top: 275px;
+}
+#logo #parrottitle{
+    left: 70px;
+    position: relative;
+    color: rgb(209, 203, 203);
+
+}
+
+#logo #par{
+    position:relative;
+    bottom: 50px;
+}
+footer{
+    width: 100%;
+    height: 15%;
+    position: absolute;
+
+  
+    
+}
+    /*switch*/
+    .toggleX0{
+        position: absolute;
+        bottom: 15px;
+        left: 250px;
+        width: 60px;
+        height: 30px;
+        display: inline;
+    
+    }
+    .toggleX0 input{
+display: none;
+    }
+    .slider::before{
+        position:absolute;
+content:"X";
+color: #547cd8;
+position: absolute;
+cursor: pointer;
+top: 0px;
+left: 10px;
+font-weight: 500;
+font-size: 20px;
+    }
+    .slider{
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0px;
+        bottom: 0;
+        right: 0;
+        background: rgba(0,0,0,0.2);
+        background-color: white;
+        box-shadow: inset 0 0 2px 2px rgba(0,0,0,0.2), inset 0 0 3px 3px rgba(0,0,0,0.1),0 0 1px 1px rgba(255,255,255,255, 0.1);
+        border-radius: 25px;
+        -webkit-transition: .25s;
+        transition: .25s;
+    }
+    .slider::after{
+        content:"O";
+        padding-top: 6px;
+        padding-left: 7px;
+        position: absolute;
+        height: 34px;
+        width: 34px;
+        left: 0px;
+        bottom: -2px;
+        -webkit-transition: .3s;
+        transition: .3s;
+        border-radius: 100%;
+        background-color: #177f83;
+        color: #fff;
+        font-weight: 900;
+
+    }
+    #parrottitle{
+        position: relative;
+        text-align: center;
+        margin-right: 200px;
+        letter-spacing: 3px;
+        font-size: 40px;
+    }
+
+input:checked + .slide::after{
+    transform: translate(35px);
+}
+.fa-refresh {
+    font-size: 20px;
+}
+#par{
+    position: relative;
+    left: 5px;
+}
+#butt_reset{
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    border: none;
+    position: relative;
+    color: #fff;
+    background-color: rgb(15, 105, 179);
+   
+}
+#around{
+     border: 1px solid #ddd;
+     position: absolute;
+     left: 30px;
+     bottom: 13px;
+     width: 45px;
+     height: 45px;
+     border-radius: 100%;
+     padding: 3px 8px 4px 4px;
+     top: 330px;
+ }
+#butt_reset.active{
+    background-color: #999;
+    bottom: -2px;
+    transition: background-color .25s ease;
+    outline: none;
+}
+#butt_reset.a:before{
+    transform: translate(20px);
+}
+#butt_reset.a::after{
+    transform: translate(-20px);
+}
+
+
+#container{
+    padding: 50px;
+    background:url('https://www.bing.com/th/id/OGC.2081270ee56f88c770bff6bd05867e05?pid=1.7&rurl=https%3a%2f%2fcdn.dribbble.com%2fusers%2f795597%2fscreenshots%2f2285594%2fearth.gif&ehk=7FhV6le6I978T8mkLFfekMyZLOFxiYEVybEAk9a6ee8%3d');
+    top: 400px;
+    position: relative;
+    margin-bottom: 150px;
+    margin-top: 20px;
+    padding-bottom: 400px;
+    border: 4px outset rgb(22, 106, 145);
+    box-shadow: 0px 2px 10px 0px rgb(26, 195, 224);
+    background-repeat: no-repeat;
+    background-size: 400px 820px;
+overflow: hidden;
+}
+#container #con{
+    text-align: center;
+    background-color: rgb(19, 19, 19);
+    border: 3px outset rgb(211, 211, 211);
+}
+ #container #people{
+overflow: hidden;
+background-repeat: no-repeat;
+position: relative;
+top: 190px;
+
+}
+#people{
+    background:url('http://www.madisonparkercapital.com/wp-content/uploads/2017/02/IPP_vid.gif');
+    position: absolute;
+    border: 2px outset white;
+    background-size: 300px 200px;
+    background-repeat: no-repeat;
+    
+    }
+#people #first {
+    text-decoration: none;
+    color: rgb(218, 218, 218);
+    font-size: 15px;
+    border: solid 2px white;
+    margin: 20px;
+    font-size: 20px;
+    background-color: rgb(22, 21, 21);
+    opacity: 50%;
+    
+    position: relative;
+}
+#people #first a{
+    position: relative;
+    transition: 1s;
+   color: white;
+   text-decoration: none;
+}
+#people #first:hover{
+    transition: .25s;
+    opacity: 100%;
+}
+#people #first a:hover{
+    
+   color:rgb(17, 221, 109);
+    transition: .25s;
+    opacity: 100%;
+}
+#people #second {
+    text-decoration: none;
+    color: rgb(218, 218, 218);
+    font-size: 15px;
+    border: solid 2px white;
+    margin: 20px;
+    font-size: 20px;
+    background-color: rgb(27, 26, 26);
+    opacity: 50%;
+    
+    position: relative;
+}
+#people #second a:hover{
+    
+    color:rgb(17, 221, 119);
+     transition: .25s;
+     opacity: 100%;
+ }
+#people #second a{
+    position: relative;
+    transition: 1s;
+   color: white;
+   text-decoration: none;
+}
+#people #second:hover{
+    transition: .25s;
+    opacity: 100%;
+}
+
+#people #third {
+    text-decoration: none;
+    color: rgb(218, 218, 218);
+    font-size: 15px;
+    border: solid 2px white;
+    margin: 20px;
+    font-size: 20px;
+    background-color: rgb(27, 27, 27);
+    opacity: 50%;
+    position: relative;
+}
+#people #third a{
+    position: relative;
+    transition: .25s;
+   color: white;
+   text-decoration: none;
+}
+#people #third:hover{
+    transition: .25s;
+    opacity: 100%;
+}
+#people #third a:hover{
+    
+    color:rgb(17, 221, 109);
+     transition: .25s;
+     opacity: 100%;
+ }
+ #timeisgold #tictactime{
+    background:url('http://1.bp.blogspot.com/-SWt_LsrF4n0/UlJ_KeTORsI/AAAAAAAAplo/dkgTUPkWQ2g/s1600/Star+Abstract+HD+wallpapers+16.jpg');
+     min-height: 15vh;
+     background-size: 1400px 300px;
+     background-repeat: no-repeat;
+     position: relative;
+     top: 1300px;
+     padding: 20px;
+     border-top: 2px solid rgb(4, 122, 158);
+     color: white;
+     font-size: 35px;
+     text-align: center;
+     letter-spacing: 3px;
+     filter: saturate(70%);
+     
+ }
+ 
+ 
+
